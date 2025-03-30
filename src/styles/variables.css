@@ -1,0 +1,84 @@
+/* src/styles/variables.css */
+:root {
+  /* Couleurs principales */
+  --color-primary: #1A73E8;
+  --color-primary-light: #6BA3FF;
+  --color-primary-dark: #0046B5;
+  
+  /* Couleurs secondaires */
+  --color-secondary: #F57C00;
+  --color-secondary-light: #FFAD42;
+  --color-secondary-dark: #BB4D00;
+  
+  /* Couleurs neutres */
+  --color-background: #F5F5F5;
+  --color-surface: #FFFFFF;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-text-disabled: #AAAAAA;
+  --color-border: #E0E0E0;
+  
+  /* Couleurs de statut */
+  --color-success: #4CAF50;
+  --color-error: #F44336;
+  --color-warning: #FF9800;
+  --color-info: #2196F3;
+  
+  /* Espacements */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+  
+  /* Arrondis */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --border-radius-circle: 50%;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s ease;
+  
+  /* Typographie */
+  --font-family: 'Roboto', sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  
+  /* Largeurs de conteneur */
+  --container-width-sm: 600px;
+  --container-width-md: 800px;
+  --container-width-lg: 1000px;
+  --container-width-xl: 1200px;
+}
+
+/* Dark mode - sera appliqué si le schéma de couleur du système est sombre */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #121212;
+    --color-surface: #1E1E1E;
+    --color-text: #FFFFFF;
+    --color-text-light: #AAAAAA;
+    --color-text-disabled: #666666;
+    --color-border: #333333;
+    
+    /* Ajustement des couleurs principales pour le mode sombre */
+    --color-primary-light: #1A73E8;
+    --color-primary: #0046B5;
+    --color-secondary-light: #F57C00;
+    --color-secondary: #BB4D00;
+  }
+}

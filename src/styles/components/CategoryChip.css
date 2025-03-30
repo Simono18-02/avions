@@ -1,0 +1,44 @@
+/* src/styles/components/CategoryChip.css */
+.category-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 16px;
+  margin-right: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+}
+
+.category-chip.selected {
+  opacity: 1;
+}
+
+.category-chip:not(.selected) {
+  opacity: 0.7;
+}
+
+.category-chip:hover {
+  opacity: 0.9;
+}
+
+.category-chip-text {
+  margin-right: var(--spacing-xs);
+}
+
+.category-chip-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color var(--transition-fast);
+}
+
+.category-chip-close:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
